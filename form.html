@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+
+<body>
+    <div class="signheading">
+        <h2 class="creative">Creative</h2>
+        <div class="sign-container">
+        <button class="heading-btn" onclick="signin()">signIn</button>
+        <button class="heading-btn" onclick="signup()">signUp</button>
+        </div>
+
+    </div>
+    <div class="form-maincontainer">
+        <div class="form-imgcontainer"></div>
+
+        <div class="formcontainer">
+            <form class="form1">
+                <div>
+                    <h2 class="welcome">Welcome!</h2>
+                    <p class="signup-tittle">Signup to continue</p>
+                </div>
+                <div class="input-container">
+                    <box-icon type='solid' class="user" name='user'></box-icon>
+                    <input type="text" placeholder="username" class="input">
+                </div>
+
+                <div class="input-container">
+                    <box-icon type='solid' class="user" name='envelope'></box-icon>
+                    <input type="text" placeholder="username111@gmail.com" class="input">
+                </div>
+
+                <div class="input-container">
+                    <box-icon type='solid' class="user" name='lock'></box-icon>
+                    <input type="text" placeholder="Password" class="input">
+                </div>
+
+                <div class="input-container">
+                    <box-icon type='solid' class="user" name='lock-alt'></box-icon>
+                    <input type="text" placeholder="confirm password" class="input">
+                </div>
+
+                <div class="registration-btn">
+                    <button type="submit" class="register-submit-btn">Signup</button>
+                    <h2 class="forget-password" onclick="signin()">Already a member?Log In</h2>
+                </div>
+            </form>
+
+            <form class="form2">
+                <div>
+                    <h2 class="welcome">Welcome Back!</h2>
+                    <p class="signup-tittle">Login to continue</p>
+                </div>
+
+                <div class="input-container">
+                    <box-icon type='solid' class="user" name='envelope'></box-icon>
+                    <input type="text" placeholder="username111@gmail.com" class="input">
+                </div>
+
+                <div class="input-container">
+                    <box-icon type='solid' class="user" name='lock'></box-icon>
+                    <input type="text" placeholder="Password" class="input">
+                </div>
+
+                <div class="registration-btn">
+                    <button type="submit" class="register-submit-btn">SignIn</button>
+                    <h2 class="forget-password">FORGET PASSWORD?</h2>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    </div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

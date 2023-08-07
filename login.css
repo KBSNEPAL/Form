@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.signheading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.sign-container {
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+    align-items: center;
+    margin-right: 1.5rem;
+
+}
+
+.formcontainer {
+    position: relative;
+}
+
+.heading-btn {
+    width: 4rem;
+    height: 2rem;
+    background-color: rgb(126, 38, 207);
+    color: white;
+    letter-spacing: .8px;
+    border-radius: .8rem;
+    border: none;
+    cursor: pointer;
+    transition: all 1s;
+
+}
+
+.heading-btn:hover,
+.heading-btn:active,
+.heading-btn:visited {
+    background-color: green;
+}
+
+.creative {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    margin-left: 4rem;
+    color: rgb(126, 38, 207);
+    letter-spacing: .8px;
+}
+
+.form-maincontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(2, 65vh);
+
+
+
+}
+
+.form-imgcontainer {
+
+    background: url("./img/contact-us2.png");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.form1 {
+    position: absolute;
+    z-index: 999;
+}
+
+.form2 {
+    position: absolute;
+    opacity: 0;
+    
+}
+
+.signup-tittle {
+    font-weight: bold;
+    color: rgb(112, 114, 116);
+    margin-bottom: 3rem;
+}
+
+.welcome {
+    letter-spacing: 1px;
+}
+
+.input-container {
+    border: 1px solid #4f55a7;
+    display: flex;
+    gap: .7rem;
+    width: 500px;
+    height: 2.5rem;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.user {
+    margin-left: .5rem;
+    height: 18px;
+
+}
+
+.input {
+    height: 1.7rem;
+    width: 360px;
+    border: none;
+    outline: none;
+    letter-spacing: .6px;
+    color: black;
+}
+
+.input::placeholder {
+    color: rgb(46, 45, 45);
+}
+
+.registration-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.register-submit-btn {
+    margin-top: 2rem;
+    height: 2rem;
+    width: 7rem;
+    background-color: rgb(82, 22, 138);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    border: none;
+    letter-spacing: .8px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.register-submit-btn:hover {
+    background-color: rgb(25, 136, 71);
+}
+
+.forget-password {
+    font-size: .9rem;
+    margin-top: 2.5rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media(max-width:1030px) {
+    .form-maincontainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 800px));
+        justify-content: center;
+        row-gap: 3rem;
+    }
+
+    .form-Registration {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:530px) {
+    .input-container {
+        width: 430px;
+    }
+
+    .registration-btn {
+        width: 430px;
+    }
+
+    .creative {
+        margin-left: 1.3rem;
+    }
+}
